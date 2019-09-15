@@ -1,0 +1,147 @@
+<article class="product">
+    <span>Choose starbucks-y location</span>
+      <div>
+        <select>
+            <option *ngFor="let location of locations">{{location}}</option> 
+        </select>
+      </div>
+  </article>
+  <article class="product">
+    <span>Choose cup size</span>
+      <div>
+        <select>
+            <option *ngFor="let cupSize of cupSizes">{{cupSize}}</option> 
+        </select>
+      </div>
+    <span>Choose your coffee beans</span>
+      <div>
+        <select>
+            <option *ngFor="let coffeebeans of coffeebeanTypes">{{coffeebeans}}</option> 
+        </select>
+      </div>
+  </article>
+  <article class="product">
+    <div>Coffee powder fineness
+    <input type="number" min="125" max="710" onkeydown="return false"/>(125 ~ 710)microns
+    </div>
+    <div>Tamping pressure
+    <input type="number" min="1" max="30" onkeydown="return false"/>(~ 30)pounds
+    </div>
+    <div>Water temperature
+    <input type="number" min="1" max="96" onkeydown="return false"/>(~ 96)C
+    </div>
+  </article>
+  <article class="product">
+    <div>Milk option&nbsp;&nbsp;
+      <label>
+      <input type="radio" checked="checked" name="milkOption">&nbsp;No milk&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="milkOption">&nbsp;Milk with 1.5% fat&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="milkOption">&nbsp;Milk with 3.8% fat&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="milkOption">&nbsp;Soy milk&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="milkOption">&nbsp;Oat milk&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="milkOption">&nbsp;Almond milk
+      <span class="checkmark"></span>
+    </label>
+    </div>
+    <div>Milk temperature
+      <input type="number" min="60" max="70" onkeydown="return false"/>(60 ~ 70)C
+    </div>
+    <div>Milk filled up till
+        <input type="number" min="0" max="100" onkeydown="return false"/>(~ 100)percent
+    </div>
+    <div>Milk form
+        <input type="number" min="0" max="150" onkeydown="return false"/>(~ 150)mm
+    </div>
+    <div>In the cup, pour&nbsp;&nbsp;&nbsp;
+      <input type="radio" checked="checked" name="esp-mlk">&nbsp;&nbsp;Espresso first&nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="esp-mlk">&nbsp;&nbsp;Milk first
+      <span class="checkmark"></span>
+    </div>
+  </article>
+  <article class="product">
+    <div>Extra water?&nbsp;&nbsp;&nbsp;
+        <input type="radio" checked="checked" name="extr-wtr">&nbsp;&nbsp;Yes&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="checkmark"></span>
+        <input type="radio" name="extr-wtr">&nbsp;&nbsp;No
+        <span class="checkmark"></span>
+    </div>
+    <div>Water temperature
+      <input type="number" min="1" max="96" onkeydown="return false"/>(~ 96)C
+    </div>
+    <div>Water amount
+      <input type="number" min="1" max="100" onkeydown="return false"/>(~ 100)percent
+    </div>
+    <div>Ice cubes?&nbsp;&nbsp;&nbsp;
+      <input type="number" min="0" max="12" onkeydown="return false"/>(~ 12)cubes</div>
+    <div>In the cup, pour in order of&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="esp-mlk-wtr">&nbsp;Milk - Espresso&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="esp-mlk-wtr">&nbsp;Milk - Water - Espresso&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="esp-mlk-wtr">&nbsp;Milk - Espresso - Water&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="esp-mlk-wtr">&nbsp;Water - Espresso&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="esp-mlk-wtr">&nbsp;Water - Milk - Espresso&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="esp-mlk-wtr">&nbsp;Water - Espresso - Milk&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="esp-mlk-wtr">&nbsp;Espresso - Milk&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="esp-mlk-wtr">&nbsp;Espresso - Milk - Water&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="esp-mlk-wtr">&nbsp;Espresso - Water&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="esp-mlk-wtr">&nbsp;Espresso - Water - Milk&nbsp;&nbsp;
+      <span class="checkmark"></span>
+    </div>
+  </article>
+  <article class="product">
+    <div>For here or take away?&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="here-away">&nbsp;For here&nbsp;&nbsp;
+      <span class="checkmark"></span>
+      <input type="radio" name="here-away">&nbsp;Take away&nbsp;&nbsp;
+      <span class="checkmark"></span>
+    </div>
+    <div>
+    <input type="checkbox">Cup holder&nbsp;&nbsp;&nbsp;<span class="checkmark"></span>
+    <input type="checkbox">Lid on top&nbsp;&nbsp;&nbsp;<span class="checkmark"></span>
+    </div>
+  </article>
+  <article class="product">
+      <span>Extra syrup?</span>
+      <div>
+        <select>
+          <option *ngFor="let syrup of syrupTypes">{{syrup}}</option> 
+        </select>
+        <input type="number" min="0" max="6" onkeydown="return false"/>(~ 6)pumps
+      </div>
+      <span>Extra toppings on top?</span>
+      <div>
+        <select>
+          <option *ngFor="let toppings of toppingTypes">{{toppings}}</option> 
+        </select>
+      </div>
+      <div>Toppings in shape of&nbsp;&nbsp;&nbsp;
+        <input type="checkbox">Zigzag&nbsp;&nbsp;&nbsp;<span class="checkmark"></span>         
+        <input type="checkbox">Star&nbsp;&nbsp;&nbsp;<span class="checkmark"></span>         
+        <input type="checkbox">Circle&nbsp;&nbsp;&nbsp;<span class="checkmark"></span>
+        <input type="number" min="0" max="5" onkeydown="return false"/>(~ 5)rounds         
+      </div>
+      <div>
+        <select>
+          <option *ngFor="let powder of powderTypes">{{powder}}</option> 
+        </select>
+        <input type="number" min="0" max="5" onkeydown="return false"/>(~ 5)times         
+      </div>
+  </article>  
+  <article class="product">
+      <span>What time are you arriving?&nbsp;&nbsp;&nbsp;</span>
+      <input type="time" min="09:00" max="18:00" required onkeydown="return false">
+  </article>
